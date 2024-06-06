@@ -5,6 +5,7 @@ import logo from "@/img/logo.svg";
 import menu from "@/img/icon-menu.svg";
 import cerrar from "@/img/icon-cerrar.svg";
 import { useState } from "react";
+import "animate.css";
 
 export default function Navbar() {
   const [abierto, setAbierto] = useState(false);
@@ -36,7 +37,9 @@ export default function Navbar() {
                   alt="Logo"
                   width={100}
                   height={100}
-                  className={`w-6 h-6 mr-1 ${abierto ? "hidden" : ""}`}
+                  className={`w-6 h-6 mr-1 animate__animated ${
+                    abierto ? "hidden animate__rotateOut" : "animate__rotateIn"
+                  }`}
                   priority
                 />
               </button>
@@ -47,7 +50,9 @@ export default function Navbar() {
                   alt="Logo"
                   width={100}
                   height={100}
-                  className={`w-6 h-6 mr-1 ${abierto ? "" : "hidden"}`}
+                  className={`w-6 h-6 mr-1 animate__animated ${
+                    abierto ? "animate__rotateIn" : "hidden animate__rotateOut"
+                  }`}
                   priority
                 />
               </button>
@@ -55,10 +60,10 @@ export default function Navbar() {
           </section>
           <section
             className={`h-[calc(100%-64px)] top-16 bottom-auto fixed w-full bg-black/35 ${
-              abierto ? "" : "hidden transition-all"
+              abierto ? "" : "hidden "
             }`}
           >
-            <section className="w-[80vw]  right-0 fixed  bg-white h-full pt-12">
+            <section className="w-[80vw]  right-0 fixed  bg-white h-full pt-12 animate__animated animate__fadeInRightBig">
               <section className="flex flex-row items-center gap-5 ">
                 <div>
                   <ul className="flex flex-col md:space-x-3 space-y-8">
