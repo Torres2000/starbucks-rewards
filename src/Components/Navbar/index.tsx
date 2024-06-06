@@ -17,19 +17,19 @@ export default function Navbar() {
   return (
     <>
       <nav>
-        <section className="max-w-[1440px] m-auto flex justify-between">
-          <section className="h-16 flex w-screen justify-between pr-[1.4rem] pl-4">
+        <section className="max-w-[1440px] m-auto flex justify-between lg:h-24 lg:px-10 lg:gap-12">
+          <section className="h-16 flex w-screen justify-between pr-[1.4rem] pl-4 sm:h-20 md:px-7 lg:w-auto  lg:h-full lg:p-0">
             <div className="flex">
               <Image
                 src={logo}
                 alt="Logo"
                 width={100}
                 height={100}
-                className="w-8"
+                className="w-8 sm:w-10 md:w-12"
                 priority
               />
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center lg:hidden">
               <button onClick={() => changeMenu()}>
                 <Image
                   id="menu"
@@ -59,26 +59,41 @@ export default function Navbar() {
             </div>
           </section>
           <section
-            className={`h-[calc(100%-64px)] top-16 bottom-auto fixed w-full bg-black/35 ${
-              abierto ? "" : "hidden "
+            className={`h-[calc(100%-64px)] top-16 bottom-auto fixed w-full bg-black/35  sm:h-[calc(100%-83px)] sm:top-20 block lg:relative lg:top-0 lg:h-full ${
+              abierto ? "" : "hidden lg:block  "
             }`}
           >
-            <section className="w-[80vw]  right-0 fixed  bg-white h-full pt-12 animate__animated animate__fadeInRightBig">
-              <section className="flex flex-row items-center gap-5 ">
-                <div>
-                  <ul className="flex flex-col md:space-x-3 space-y-8">
-                    <li className="md:uppercase   font-medium  px-8">
-                      <a href="#" className="text-lg">
+            <section
+              className={`w-[80vw]  right-0 fixed  bg-white h-full pt-12  lg:relative lg:w-auto lg:flex lg:p-0 lg:justify-between ${
+                abierto
+                  ? "animate__animated  animate__fadeInRightBig"
+                  : "hiddern "
+              }`}
+            >
+              <section className="flex flex-row items-center gap-5 lg:h-full">
+                <div className="lg:h-full">
+                  <ul className="flex flex-col  space-y-8 lg:flex-row lg:items-center lg:space-x-7 lg:space-y-0 lg:h-full">
+                    <li className="   font-medium  px-8 lg:px-0 lg:h-full">
+                      <a
+                        href="#"
+                        className="text-lg md:md:text-2xl lg:uppercase lg:text-base lg:font-bold lg:h-full lg:flex lg:items-center lg:border-b-4 lg:border-white lg:hover:border-b-4 lg:hover:border-teal-800"
+                      >
                         Menu
                       </a>
                     </li>
-                    <li className="md:uppercase  font-medium px-8">
-                      <a href="#" className="text-lg">
+                    <li className="  font-medium px-8 lg:px-0 lg:h-full">
+                      <a
+                        href="#"
+                        className="text-lg md:md:text-2xl lg:uppercase lg:text-base lg:font-bold lg:h-full lg:flex lg:items-center lg:border-b-4 lg:border-white lg:hover:border-b-4 lg:hover:border-teal-800"
+                      >
                         Rewards
                       </a>
                     </li>
-                    <li className="md:uppercase  font-medium  px-8">
-                      <a href="#" className="text-lg">
+                    <li className="  font-medium  px-8 lg:px-0 lg:h-full">
+                      <a
+                        href="#"
+                        className="text-lg md:md:text-2xl lg:uppercase lg:text-base lg:font-bold lg:h-full lg:flex lg:items-center lg:border-b-4 lg:border-white lg:hover:border-b-4 lg:hover:border-teal-800"
+                      >
                         Gift Cards
                       </a>
                     </li>
@@ -86,7 +101,7 @@ export default function Navbar() {
                 </div>
               </section>
               <hr className="my-8 mx-8 h-[2px] bg-gray-600" />
-              <section className="flex flex-col-reverse px-6">
+              <section className="flex flex-col-reverse px-6 lg:flex-row lg:items-center lg:p-0">
                 <div>
                   <a
                     href="#"
