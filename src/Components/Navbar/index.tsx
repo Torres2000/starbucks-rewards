@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <>
       <nav>
-        <section className="max-w-[1440px] m-auto flex justify-between lg:h-24 lg:px-10 lg:gap-12">
+        <section className="max-w-[1440px] m-auto flex justify-between lg:h-24 lg:px-10 lg:gap-12 2xl:px-0">
           <section className="h-16 flex w-screen justify-between pr-[1.4rem] pl-4 sm:h-20 md:px-7 lg:w-auto  lg:h-full lg:p-0">
             <div className="flex">
               <Image
@@ -25,7 +25,7 @@ export default function Navbar() {
                 alt="Logo"
                 width={100}
                 height={100}
-                className="w-8 sm:w-10 md:w-12"
+                className="w-8 sm:w-10 md:w-14"
                 priority
               />
             </div>
@@ -59,7 +59,7 @@ export default function Navbar() {
             </div>
           </section>
           <section
-            className={`h-[calc(100%-64px)] top-16 bottom-auto fixed w-full bg-black/35  sm:h-[calc(100%-83px)] sm:top-20 block lg:relative lg:top-0 lg:h-full ${
+            className={`h-[calc(100%-64px)] top-16 bottom-auto fixed w-full bg-black/35  sm:h-[calc(100%-83px)] sm:top-20 block lg:bg-white lg:relative lg:top-0 lg:h-full ${
               abierto ? "" : "hidden lg:block  "
             }`}
           >
@@ -76,7 +76,7 @@ export default function Navbar() {
                     <li className="   font-medium  px-8 lg:px-0 lg:h-full">
                       <a
                         href="#"
-                        className="text-lg md:md:text-2xl lg:uppercase lg:text-base lg:font-bold lg:h-full lg:flex lg:items-center lg:border-b-4 lg:border-white lg:hover:border-b-4 lg:hover:border-teal-800"
+                        className="text-lg md:md:text-2xl lg:uppercase lg:text-base lg:font-bold lg:h-full lg:flex lg:items-center lg:border-b-4 lg:border-white "
                       >
                         Menu
                       </a>
@@ -84,7 +84,7 @@ export default function Navbar() {
                     <li className="  font-medium px-8 lg:px-0 lg:h-full">
                       <a
                         href="#"
-                        className="text-lg md:md:text-2xl lg:uppercase lg:text-base lg:font-bold lg:h-full lg:flex lg:items-center lg:border-b-4 lg:border-white lg:hover:border-b-4 lg:hover:border-teal-800"
+                        className="text-lg md:md:text-2xl lg:uppercase lg:text-base lg:font-bold lg:h-full lg:flex lg:items-center lg:border-b-4 lg:border-white  lg:border-b-teal-800"
                       >
                         Rewards
                       </a>
@@ -92,7 +92,7 @@ export default function Navbar() {
                     <li className="  font-medium  px-8 lg:px-0 lg:h-full">
                       <a
                         href="#"
-                        className="text-lg md:md:text-2xl lg:uppercase lg:text-base lg:font-bold lg:h-full lg:flex lg:items-center lg:border-b-4 lg:border-white lg:hover:border-b-4 lg:hover:border-teal-800"
+                        className="text-lg md:md:text-2xl lg:uppercase lg:text-base lg:font-bold lg:h-full lg:flex lg:items-center lg:border-b-4 lg:border-white "
                       >
                         Gift Cards
                       </a>
@@ -105,7 +105,7 @@ export default function Navbar() {
                 <div>
                   <a
                     href="#"
-                    className="flex items-center mr-16 gap-2 mt-6 text-sm font-bold"
+                    className="flex items-center mr-16 gap-2 mt-6 text-sm font-bold  lg:my-0 lg:mr-16"
                   >
                     <Image
                       src={ubicacion}
