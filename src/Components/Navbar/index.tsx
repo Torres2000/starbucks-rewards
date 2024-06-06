@@ -1,9 +1,18 @@
+"use client";
 import Image from "next/image";
 import ubicacion from "@/img/ubicacion.svg";
 import logo from "@/img/logo.svg";
 import menu from "@/img/icon-menu.svg";
+import cerrar from "@/img/icon-cerrar.svg";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [abierto, setAbierto] = useState(false);
+  function changeMenu() {
+    setAbierto(!abierto);
+  }
+  console.log(abierto);
+
   return (
     <>
       <nav>
@@ -16,21 +25,39 @@ export default function Navbar() {
                 width={100}
                 height={100}
                 className="w-8"
+                priority
               />
             </div>
             <div className="flex items-center">
-              <button>
+              <button onClick={() => changeMenu()}>
                 <Image
+                  id="menu"
                   src={menu}
                   alt="Logo"
                   width={100}
                   height={100}
-                  className="w-6 h-6 mr-1"
+                  className={`w-6 h-6 mr-1 ${abierto ? "hidden" : ""}`}
+                  priority
+                />
+              </button>
+              <button onClick={() => changeMenu()}>
+                <Image
+                  id="cerrar"
+                  src={cerrar}
+                  alt="Logo"
+                  width={100}
+                  height={100}
+                  className={`w-6 h-6 mr-1 ${abierto ? "" : "hidden"}`}
+                  priority
                 />
               </button>
             </div>
           </section>
-          <section className="h-[calc(100%-64px)] top-16 bottom-auto fixed w-full bg-black/35">
+          <section
+            className={`h-[calc(100%-64px)] top-16 bottom-auto fixed w-full bg-black/35 ${
+              abierto ? "" : "hidden transition-all"
+            }`}
+          >
             <section className="w-[80vw]  right-0 fixed  bg-white h-full pt-12">
               <section className="flex flex-row items-center gap-5 ">
                 <div>
@@ -66,6 +93,7 @@ export default function Navbar() {
                       width={100}
                       height={100}
                       className="w-6 h-6 "
+                      priority
                     />
                     Find a store
                   </a>
