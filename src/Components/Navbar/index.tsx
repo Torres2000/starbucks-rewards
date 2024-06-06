@@ -17,8 +17,8 @@ export default function Navbar() {
   return (
     <>
       <nav>
-        <section className="max-w-[1440px] m-auto flex justify-between lg:h-24 lg:px-10 lg:gap-12 2xl:px-0">
-          <section className="h-16 flex w-screen justify-between pr-[1.4rem] pl-4 sm:h-20 md:px-7 lg:w-auto  lg:h-full lg:p-0">
+        <section className="max-w-[1440px] m-auto flex justify-between lg:h-[6.2rem] lg:px-10 lg:gap-12 2xl:px-0">
+          <section className="h-16 flex w-screen justify-between pr-[1.4rem] pl-4 sm:h-[4.5rem] md:px-7 md:h-[5.2rem] lg:w-auto  lg:h-full lg:p-0">
             <div className="flex">
               <Image
                 src={logo}
