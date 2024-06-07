@@ -76,7 +76,7 @@ export default function Navbar() {
                     <li className="   font-medium  px-8 lg:px-0 lg:h-full">
                       <a
                         href="#"
-                        className="text-lg md:md:text-2xl lg:uppercase lg:text-base lg:font-bold lg:h-full lg:flex lg:items-center lg:border-b-4 lg:border-white "
+                        className="text-lg md:md:text-2xl lg:uppercase lg:text-base lg:font-bold lg:h-full lg:flex lg:items-center lg:border-b-4 lg:border-white hover:text-teal-600 "
                       >
                         Menu
                       </a>
@@ -84,7 +84,7 @@ export default function Navbar() {
                     <li className="  font-medium px-8 lg:px-0 lg:h-full">
                       <a
                         href="#"
-                        className="text-lg md:md:text-2xl lg:uppercase lg:text-base lg:font-bold lg:h-full lg:flex lg:items-center lg:border-b-4 lg:border-white  lg:border-b-teal-800"
+                        className="text-lg md:md:text-2xl lg:uppercase lg:text-base lg:font-bold lg:h-full lg:flex lg:items-center lg:border-b-4 lg:border-white hover:text-teal-600  lg:border-b-teal-700"
                       >
                         Rewards
                       </a>
@@ -92,7 +92,7 @@ export default function Navbar() {
                     <li className="  font-medium  px-8 lg:px-0 lg:h-full">
                       <a
                         href="#"
-                        className="text-lg md:md:text-2xl lg:uppercase lg:text-base lg:font-bold lg:h-full lg:flex lg:items-center lg:border-b-4 lg:border-white "
+                        className="text-lg md:md:text-2xl lg:uppercase lg:text-base lg:font-bold lg:h-full lg:flex lg:items-center lg:border-b-4 lg:border-white hover:text-teal-600 "
                       >
                         Gift Cards
                       </a>
