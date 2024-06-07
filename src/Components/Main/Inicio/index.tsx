@@ -1,8 +1,8 @@
 export default function Inicio() {
   return (
     <>
-      <section className="fondoInicio pb-10 h-[75vh] sm:h-screen md:h-[42vh] md:flex md:bg-bottom md:p-0 md:mb-10">
-        <div className="flex flex-col items-center px-6 py-7 md:justify-center md:items-start md:max-w-[400px]">
+      <section className="fondoInicio pb-10 h-[75vh] sm:h-screen md:h-[42vh] md:flex md:bg-bottom md:p-0 md:mb-10 lg:h-[89vh]">
+        <div className="flex flex-col items-center px-6 py-7 md:justify-center md:items-start md:max-w-[400px] lg:px-10 lg:min-w-[48%]">
           <h2 className="text-[26px] font-bold text-center md:text-left md:text-[32px]">
             FREE COFFEE
             <br />
@@ -33,7 +33,7 @@ export default function Inicio() {
               <span className="md:text-lg">
                 Or{" "}
                 <a href="#" className="hidden border-b-black border md:inline">
-                  join online the app
+                  join in the app
                 </a>{" "}
                 for the bets experience
               </span>
