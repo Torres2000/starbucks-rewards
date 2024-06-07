@@ -18,14 +18,14 @@ export default function Navbar() {
     <>
       <nav>
         <section className="max-w-[1440px] m-auto flex justify-between lg:h-[6.2rem] lg:px-10 lg:gap-12 2xl:px-0">
-          <section className="h-16 flex w-screen justify-between pr-[1.4rem] pl-4 sm:h-[4.5rem] md:px-7 md:h-[5.2rem] lg:w-auto  lg:h-full lg:p-0">
+          <section className="h-[73px] flex w-screen justify-between pr-[1.4rem] pl-4 sm:h-[4.5rem] md:px-7 md:h-[5.2rem] lg:w-auto  lg:h-full lg:p-0">
             <div className="flex">
               <Image
                 src={logo}
                 alt="Logo"
                 width={100}
                 height={100}
-                className="w-8 sm:w-10 md:w-14"
+                className="w-10 sm:w-10 md:w-14"
                 priority
               />
             </div>
