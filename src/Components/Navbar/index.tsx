@@ -76,7 +76,7 @@ export default function Navbar() {
                     <li className="   font-medium  px-8 lg:px-0 lg:h-full">
                       <a
                         href="#"
-                        className="text-lg md:md:text-2xl lg:uppercase lg:text-base lg:font-bold lg:h-full lg:flex lg:items-center lg:border-b-4 lg:border-white hover:text-teal-600 "
+                        className="text-lg md:md:text-2xl lg:uppercase lg:text-base lg:font-bold lg:h-full lg:flex lg:items-center lg:border-b-4 lg:border-white hover:text-teal-600 transition-all duration-200"
                       >
                         Menu
                       </a>
@@ -84,7 +84,7 @@ export default function Navbar() {
                     <li className="  font-medium px-8 lg:px-0 lg:h-full">
                       <a
                         href="#"
-                        className="text-lg md:md:text-2xl lg:uppercase lg:text-base lg:font-bold lg:h-full lg:flex lg:items-center lg:border-b-4 lg:border-white hover:text-teal-600  lg:border-b-teal-700"
+                        className="text-lg md:md:text-2xl lg:uppercase lg:text-base lg:font-bold lg:h-full lg:flex lg:items-center lg:border-b-4 lg:border-white hover:text-teal-600  lg:border-b-teal-700 transition-all duration-200"
                       >
                         Rewards
                       </a>
@@ -92,7 +92,7 @@ export default function Navbar() {
                     <li className="  font-medium  px-8 lg:px-0 lg:h-full">
                       <a
                         href="#"
-                        className="text-lg md:md:text-2xl lg:uppercase lg:text-base lg:font-bold lg:h-full lg:flex lg:items-center lg:border-b-4 lg:border-white hover:text-teal-600 "
+                        className="text-lg md:md:text-2xl lg:uppercase lg:text-base lg:font-bold lg:h-full lg:flex lg:items-center lg:border-b-4 lg:border-white hover:text-teal-600 transition-all duration-200"
                       >
                         Gift Cards
                       </a>
@@ -105,7 +105,7 @@ export default function Navbar() {
                 <div>
                   <a
                     href="#"
-                    className="flex items-center mr-16 gap-2 mt-6 text-sm font-bold  lg:my-0 lg:mr-16"
+                    className="flex items-center mr-16 gap-2 mt-6 text-sm font-bold hover:text-teal-600 transition-all duration-200  lg:my-0 lg:mr-16 "
                   >
                     <Image
                       src={ubicacion}
@@ -119,10 +119,10 @@ export default function Navbar() {
                   </a>
                 </div>
                 <div className="flex gap-5">
-                  <button className="text-sm py-1 px-3 font-medium  border-black border rounded-full">
+                  <button className="text-sm py-1 px-3 font-medium  border-black border rounded-full hover:bg-black/10 transition-all duration-200	">
                     Sing in
                   </button>
-                  <button className="text-sm bg-black text-white font-medium py-1 px-4 border border-black bord rounded-full">
+                  <button className="text-sm bg-black text-white font-medium py-1 px-4 border border-black  rounded-full hover:border-black/70 hover:bg-black/70 transition-all duration-200	">
                     Join now
                   </button>
                 </div>
