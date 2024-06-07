@@ -2,8 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-.heroMobile {
+.fondoInicio {
+  background-color: #d4e9e2;
   background-image: url("../img/hero/hero-mobile-2021.webp");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .fondoInicio {
+    background-image: url("../img/hero/xl-hero-desktop-2021.webp");
+  }
 }
