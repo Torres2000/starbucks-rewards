@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.heroMobile {
+  background-image: url("../img/hero/hero-mobile-2021.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -18,8 +18,6 @@ export default function Header() {
           </div>
         </div>
       </section>
-
-      <section className="h-screen"></section>
     </>
   );
 }

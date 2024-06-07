@@ -1,10 +1,10 @@
 import Navbar from "@/Components/Navbar";
-import Header from "@/Components/Header";
+import Main from "@/Components/Main";
 export default function Home() {
   return (
     <>
       <Navbar />
-      <Header />
+      <Main />
     </>
   );
 }
