@@ -59,7 +59,7 @@ export default function Navbar() {
             </div>
           </section>
           <section
-            className={`h-[calc(100%-64px)] top-16 bottom-auto fixed w-full bg-black/35  sm:h-[calc(100%-83px)] sm:top-20 block lg:bg-white lg:relative lg:top-0 lg:h-full ${
+            className={`h-[calc(100%-64px)]  bottom-auto fixed z-10 w-full bg-black/35  sm:h-[calc(100%-83px)] top-[73px] block md:top-[83px] lg:bg-white lg:relative lg:top-0 lg:h-full ${
               abierto ? "" : "hidden lg:block  "
             }`}
           >
