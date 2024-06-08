@@ -2,7 +2,7 @@ export default function Inicio() {
   return (
     <>
       <section className="fondoInicio   flex md:bg-bottom  md:mb-10 ">
-        <div className=" w-0 float-left pb-[133%] 2xl:pb-[max(810px)]"></div>
+        <div className=" w-0 float-left pb-[133%] md:pb-[max(56%)] 2xl:pb-[max(810px)]"></div>
         <div className="  flex flex-col items-center px-6 py-7 w-full md:justify-center md:items-start md:max-w-[400px] lg:px-10 lg:min-w-[48%] 2xl:m-auto 2xl:w-full 2xl:max-w-[1440px] 2xl:p-0">
           <h2 className="text-[26px] font-bold text-center md:text-left md:text-[32px]">
             FREE COFFEE
