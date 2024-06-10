@@ -6,7 +6,7 @@ export default function GettingStarted() {
   return (
     <>
       <section>
-        <div className="py-8 px-4 md:py-16 md:px-6 lg:px-10">
+        <div className="max-w-[1440px] m-auto py-8 px-4 md:py-16 md:px-6 lg:px-10">
           <div>
             <div className="flex flex-col items-center">
               <h2 className="text-2xl font-semibold md:text-[28px]">
@@ -40,7 +40,7 @@ export default function GettingStarted() {
                     </a>
                   </p>
                 </div>
-                <div className="md:block md:text-center">
+                <div className="hidden md:block md:text-center">
                   <h3 className="font-semibold md:text-lg ">
                     Create an account
                   </h3>
