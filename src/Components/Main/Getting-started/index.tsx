@@ -6,7 +6,7 @@ export default function GettingStarted() {
   return (
     <>
       <section>
-        <div className="py-8 px-4 md:py-16 md:px-6">
+        <div className="py-8 px-4 md:py-16 md:px-6 lg:px-10">
           <div>
             <div className="flex flex-col items-center">
               <h2 className="text-2xl font-semibold md:text-[28px]">
@@ -16,7 +16,7 @@ export default function GettingStarted() {
                 Earn Stars and get rewarded in a few easy steps.
               </p>
             </div>
-            <div className="pt-12 space-y-9 md:space-y-0 md:flex md:mx-9">
+            <div className="pt-12 space-y-9 md:space-y-0 md:flex md:mx-9 lg:mx-14">
               <div className="flex items-start gap-[16px] md:flex-col md:items-center md:mr-5">
                 <Image
                   src={getting_1}
