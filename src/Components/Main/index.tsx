@@ -9,9 +9,9 @@ export default function Main() {
         <Header />
         {/*
         <Inicio />
-        <Getting_Started />
         */}
         <Reward_tiers />
+        <Getting_Started />
       </main>
     </>
   );

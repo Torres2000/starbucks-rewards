@@ -1,6 +1,12 @@
 "use client";
 import Image from "next/image";
 import { Tabs } from "../../ui/tabs";
+
+import start25 from "@/img/reward-tiers/25.webp";
+import start100 from "@/img/reward-tiers/100.webp";
+import start200 from "@/img/reward-tiers/200.webp";
+import start300 from "@/img/reward-tiers/300.webp";
+import start400 from "@/img/reward-tiers/400.webp";
 export default function RewardTiers() {
   const tabs = [
     {
@@ -9,13 +15,10 @@ export default function RewardTiers() {
           25 <span className="text-[#cba258] text-xs">★</span>
         </p>
       ),
-      value: "product",
+      value: "25",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-black bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>
-            25 <span className="text-[#cba258] text-xs">★</span>
-          </p>
-          <DummyContent />
+        <div className=" bg-[#d4e9e2] pb-12 ">
+          <Start25 />
         </div>
       ),
     },
@@ -25,11 +28,11 @@ export default function RewardTiers() {
           100 <span className="text-[#cba258] text-xs">★</span>
         </p>
       ),
-      value: "services",
+      value: "100",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-black bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Services tab</p>
-          <DummyContent />
+        <div className=" bg-[#d4e9e2] pb-12">
+          {" "}
+          <Start25 />
         </div>
       ),
     },
@@ -40,11 +43,11 @@ export default function RewardTiers() {
           200 <span className="text-[#cba258] text-xs">★</span>
         </p>
       ),
-      value: "services",
+      value: "200",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-black bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Services tab</p>
-          <DummyContent />
+        <div className=" bg-[#d4e9e2] pb-12">
+          {" "}
+          <Start25 />
         </div>
       ),
     },
@@ -55,11 +58,11 @@ export default function RewardTiers() {
           300 <span className="text-[#cba258] text-xs">★</span>
         </p>
       ),
-      value: "services",
+      value: "300",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-black bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Services tab</p>
-          <DummyContent />
+        <div className=" bg-[#d4e9e2] pb-12">
+          {" "}
+          <Start25 />
         </div>
       ),
     },
@@ -70,11 +73,11 @@ export default function RewardTiers() {
           400 <span className="text-[#cba258] text-xs">★</span>
         </p>
       ),
-      value: "services",
+      value: "400",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-black bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Services tab</p>
-          <DummyContent />
+        <div className=" bg-[#d4e9e2] pb-12 ">
+          {" "}
+          <Start25 />
         </div>
       ),
     },
@@ -82,8 +85,8 @@ export default function RewardTiers() {
 
   return (
     <>
-      <section className="pt-8">
-        <div className="pt-12">
+      <section className="pt-8 h-[90vh]">
+        <div className="pt-12 bg-[#d3e8e152] ">
           <div>
             <h2 className="text-2xl font-semibold text-center">
               Get your favorites for free
@@ -99,14 +102,31 @@ export default function RewardTiers() {
     </>
   );
 }
-const DummyContent = () => {
+const Start25 = () => {
   return (
-    <Image
-      src="/linear.webp"
-      alt="dummy image"
-      width="1000"
-      height="1000"
-      className="object-cover object-left-top h-[60%]  md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
-    />
+    <>
+      <div>
+        <div>
+          <div className="py-8">
+            <Image
+              src={start25}
+              alt="Start"
+              width="1000"
+              height="1000"
+              className="object-cover object-left-top"
+            />
+          </div>
+          <div className="px-4">
+            <h3 className="text-center font-semibold text-lg pb-[18px]">
+              Customize your drink
+            </h3>
+            <p className="text-center text-sm">
+              Make your drink just right with an extra espresso shot, nondairy
+              milk or a dash of your favorite syrup.
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
