@@ -8,6 +8,7 @@ import start200 from "@/img/reward-tiers/200.webp";
 import start300 from "@/img/reward-tiers/300.webp";
 import start400 from "@/img/reward-tiers/400.webp";
 export default function RewardTiers() {
+  /*
   const tabs = [
     {
       title: (
@@ -32,7 +33,7 @@ export default function RewardTiers() {
       content: (
         <div className=" bg-[#d4e9e2] pb-12">
           {" "}
-          <Start25 />
+          <Start100 />
         </div>
       ),
     },
@@ -46,8 +47,7 @@ export default function RewardTiers() {
       value: "200",
       content: (
         <div className=" bg-[#d4e9e2] pb-12">
-          {" "}
-          <Start25 />
+          <Start200 />
         </div>
       ),
     },
@@ -61,8 +61,7 @@ export default function RewardTiers() {
       value: "300",
       content: (
         <div className=" bg-[#d4e9e2] pb-12">
-          {" "}
-          <Start25 />
+          <Start300 />
         </div>
       ),
     },
@@ -76,8 +75,7 @@ export default function RewardTiers() {
       value: "400",
       content: (
         <div className=" bg-[#d4e9e2] pb-12 ">
-          {" "}
-          <Start25 />
+          <Start400 />
         </div>
       ),
     },
@@ -126,6 +124,334 @@ const Start25 = () => {
             </p>
           </div>
         </div>
+      </div>
+    </>
+  );
+};
+const Start100 = () => {
+  return (
+    <>
+      <div>
+        <div>
+          <div className="py-8">
+            <Image
+              src={start100}
+              alt="Start"
+              width="1000"
+              height="1000"
+              className="object-cover object-left-top"
+            />
+          </div>
+          <div className="px-4">
+            <h3 className="text-center font-semibold text-lg pb-[18px]">
+              CBrewed hot or iced coffee or tea, bakery item, packaged snack and
+              more
+            </h3>
+            <p className="text-center text-sm">
+              Treat yourself to an iced coffee, buttery croissant, bag of chips
+              and more.
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+const Start200 = () => {
+  return (
+    <>
+      <div>
+        <div>
+          <div className="py-8">
+            <Image
+              src={start200}
+              alt="Start"
+              width="1000"
+              height="1000"
+              className="object-cover object-left-top"
+            />
+          </div>
+          <div className="px-4">
+            <h3 className="text-center font-semibold text-lg pb-[18px]">
+              Handcrafted drink (Cold Brew, lattes and more) or hot breakfast
+            </h3>
+            <p className="text-center text-sm">
+              Turn good mornings great with a delicious handcrafted drink of
+              your choice, breakfast sandwich or oatmeal on us.
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+const Start300 = () => {
+  return (
+    <>
+      <div>
+        <div>
+          <div className="py-8">
+            <Image
+              src={start300}
+              alt="Start"
+              width="1000"
+              height="1000"
+              className="object-cover object-left-top"
+            />
+          </div>
+          <div className="px-4">
+            <h3 className="text-center font-semibold text-lg pb-[18px]">
+              Sandwich, protein box or at-home coffee
+            </h3>
+            <p className="text-center text-sm">
+              Enjoy a PM pick-me-up with a lunch sandwich, protein box or a bag
+              of coffee—including Starbucks VIA Instant®.
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+const Start400 = () => {
+  return (
+    <>
+      <div>
+        <div>
+          <div className="py-8">
+            <Image
+              src={start400}
+              alt="Start"
+              width="1000"
+              height="1000"
+              className="object-cover object-left-top"
+            />
+          </div>
+          <div className="px-4">
+            <h3 className="text-center font-semibold text-lg pb-[18px]">
+              Select Starbucks® merchandise
+            </h3>
+            <p className="text-center text-sm">
+              Take home a signature cup, drink tumbler or your choice of coffee
+              merch up to $20.
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+*/
+  const tabs = [
+    {
+      title: (
+        <p>
+          25 <span className="text-[#cba258] text-xs">★</span>
+        </p>
+      ),
+      value: "25",
+      content: (
+        <div className=" bg-[#d4e9e2] pb-12">
+          <Start25 />
+        </div>
+      ),
+    },
+    {
+      title: (
+        <p>
+          100 <span className="text-[#cba258] text-xs">★</span>
+        </p>
+      ),
+      value: "100",
+      content: (
+        <div className=" bg-[#d4e9e2] pb-12">
+          {" "}
+          <Start100 />
+        </div>
+      ),
+    },
+
+    {
+      title: (
+        <p>
+          200 <span className="text-[#cba258] text-xs">★</span>
+        </p>
+      ),
+      value: "200",
+      content: (
+        <div className=" bg-[#d4e9e2] pb-12">
+          <Start200 />
+        </div>
+      ),
+    },
+
+    {
+      title: (
+        <p>
+          300 <span className="text-[#cba258] text-xs">★</span>
+        </p>
+      ),
+      value: "300",
+      content: (
+        <div className=" bg-[#d4e9e2] pb-12">
+          <Start300 />
+        </div>
+      ),
+    },
+
+    {
+      title: (
+        <p>
+          400 <span className="text-[#cba258] text-xs">★</span>
+        </p>
+      ),
+      value: "400",
+      content: (
+        <div className=" bg-[#d4e9e2] pb-12 ">
+          <Start400 />
+        </div>
+      ),
+    },
+  ];
+
+  return (
+    <>
+      <section className="pt-12">
+        <div>
+          <h2 className="text-2xl font-semibold text-center">
+            Get your favorites for free
+          </h2>
+        </div>
+        <div className="h-[32rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start mt-[22px] mb-40">
+          <Tabs tabs={tabs} />
+        </div>
+      </section>
+    </>
+  );
+}
+
+const Start25 = () => {
+  return (
+    <>
+      <div className="py-8">
+        <Image
+          src={start25}
+          alt="dummy image"
+          width="1000"
+          height="1000"
+          className="object-cover object-left-top  -bottom-10 inset-x-0  rounded-xl mx-auto"
+        />
+      </div>
+      <div className="px-4">
+        <h3 className="text-center font-semibold text-lg pb-[18px]">
+          Customize your drink
+        </h3>
+        <p className="text-center text-sm">
+          Make your drink just right with an extra espresso shot, nondairy milk
+          or a dash of your favorite syrup.
+        </p>
+      </div>
+    </>
+  );
+};
+const Start100 = () => {
+  return (
+    <>
+      <div className="py-8">
+        <Image
+          src={start100}
+          alt="dummy image"
+          width="1000"
+          height="1000"
+          className="object-cover object-left-top  -bottom-10 inset-x-0  rounded-xl mx-auto"
+        />
+      </div>
+      <div className="px-4">
+        <h3 className="text-center font-semibold text-lg pb-[18px]">
+          Brewed hot or iced coffee or tea, bakery item, packaged snack and more
+        </h3>
+        <p className="text-center text-sm">
+          Treat yourself to an iced coffee, buttery croissant, bag of chips and
+          more.
+        </p>
+      </div>
+    </>
+  );
+};
+const Start200 = () => {
+  return (
+    <>
+      <div className="py-8">
+        <Image
+          src={start200}
+          alt="dummy image"
+          width="1000"
+          height="1000"
+          className="object-cover object-left-top  -bottom-10 inset-x-0  rounded-xl mx-auto"
+        />
+      </div>
+
+      <div className="px-4">
+        <h3 className="text-center font-semibold text-lg pb-[18px]">
+          Handcrafted drink (Cold Brew, lattes and more) or hot breakfast
+        </h3>
+        <p className="text-center text-sm">
+          Turn good mornings great with a delicious handcrafted drink of your
+          choice, breakfast sandwich or oatmeal on us.
+        </p>
+      </div>
+    </>
+  );
+};
+const Start300 = () => {
+  return (
+    <>
+      <div className="py-8">
+        <Image
+          src={start300}
+          alt="dummy image"
+          width="1000"
+          height="1000"
+          className="object-cover object-left-top  -bottom-10 inset-x-0  rounded-xl mx-auto"
+        />
+      </div>
+
+      <div className="px-4">
+        <h3 className="text-center font-semibold text-lg pb-[18px]">
+          Sandwich, protein box or at-home coffee
+        </h3>
+        <p className="text-center text-sm">
+          Enjoy a PM pick-me-up with a lunch sandwich, protein box or a bag of
+          coffee—including Starbucks VIA Instant®.
+        </p>
+      </div>
+    </>
+  );
+};
+const Start400 = () => {
+  return (
+    <>
+      <div className="py-8">
+        <Image
+          src={start400}
+          alt="dummy image"
+          width="1000"
+          height="1000"
+          className="object-cover object-left-top  -bottom-10 inset-x-0  rounded-xl mx-auto"
+        />
+      </div>
+
+      <div className="px-4">
+        <h3 className="text-center font-semibold text-lg pb-[18px]">
+          Select Starbucks® merchandise
+        </h3>
+        <p className="text-center text-sm">
+          Take home a signature cup, drink tumbler or your choice of coffee
+          merch up to $20.
+        </p>
       </div>
     </>
   );

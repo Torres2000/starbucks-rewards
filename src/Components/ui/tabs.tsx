@@ -46,7 +46,7 @@ export const Tabs = ({
       >
         {propTabs.map((tab, idx) => (
           <button
-            key={tab.title}
+            key={tab.value}
             onClick={() => {
               moveSelectedTabToTop(idx);
             }}
@@ -65,7 +65,7 @@ export const Tabs = ({
                 layoutId="clickedbutton"
                 transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
                 className={cn(
-                  "absolute inset-0  border-b-4 border-b-[#00754a] ",
+                  "absolute inset-0  border-b-[6px] border-b-[#00754a] ",
                   activeTabClassName
                 )}
               />
@@ -107,10 +107,8 @@ export const FadeInDiv = ({
           key={tab.value}
           layoutId={tab.value}
           style={{
-            scale: 1 - idx * 0.1,
-
             zIndex: -idx,
-            opacity: idx < 3 ? 1 - idx * 0.1 : 0,
+            opacity: idx < 1 ? 1 - idx * 0 : 0,
           }}
           animate={{
             y: isActive(tab) ? [0, 40, 0] : 0,
