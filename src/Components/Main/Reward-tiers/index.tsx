@@ -18,7 +18,7 @@ export default function RewardTiers() {
       ),
       value: "25",
       content: (
-        <div className=" bg-[#d4e9e2] pb-12 md:flex md:items-center md:py-8 md:gap-12 md:justify-center">
+        <div className="  pb-12 md:flex md:items-center md:py-8 md:gap-12 md:justify-center ">
           <Datos id={"0"} />
         </div>
       ),
@@ -31,7 +31,7 @@ export default function RewardTiers() {
       ),
       value: "100",
       content: (
-        <div className=" bg-[#d4e9e2] pb-12 md:flex md:items-center md:py-8 md:gap-12 md:justify-center">
+        <div className="  pb-12 md:flex md:items-center md:py-8 md:gap-12 md:justify-center ">
           <Datos id={"1"} />
         </div>
       ),
@@ -45,7 +45,7 @@ export default function RewardTiers() {
       ),
       value: "200",
       content: (
-        <div className=" bg-[#d4e9e2] pb-12 md:flex md:items-center md:py-8 md:gap-12 md:justify-center">
+        <div className="  pb-12 md:flex md:items-center md:py-8 md:gap-12 md:justify-center ">
           <Datos id={"2"} />
         </div>
       ),
@@ -59,7 +59,7 @@ export default function RewardTiers() {
       ),
       value: "300",
       content: (
-        <div className=" bg-[#d4e9e2] pb-12 md:flex md:items-center md:py-8 md:gap-12 md:justify-center">
+        <div className="  pb-12 md:flex md:items-center md:py-8 md:gap-12 md:justify-center ">
           <Datos id={"3"} />
         </div>
       ),
@@ -74,7 +74,7 @@ export default function RewardTiers() {
       ),
       value: "400",
       content: (
-        <div className=" bg-[#d4e9e2] pb-12 md:flex md:items-center md:py-8 md:gap-12 md:justify-center">
+        <div className="  pb-12 md:flex md:items-center md:py-8 md:gap-12 md:justify-center ">
           <Datos id={"4"} />
         </div>
       ),
@@ -90,7 +90,7 @@ export default function RewardTiers() {
             Get your favorites for free
           </h2>
         </div>
-        <div className="h-[28rem] md:h-[20rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start mt-[22px] mb-40 md:mt-14 md:mb-16">
+        <div className="h-[28rem] md:h-[20rem] [perspective:1000px] relative b flex flex-col  mx-auto w-full  items-start justify-start mt-[22px] mb-40 md:mt-14 md:mb-16">
           <Tabs tabs={tabs} />
         </div>
       </section>

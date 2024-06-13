@@ -63,10 +63,9 @@ export const Tabs = ({
             {active.value === tab.value && (
               <motion.div
                 layoutId="clickedbutton"
-                transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
+                //transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
                 className={cn(
-                  "absolute inset-0  border-b-[6px] md:border-b-[4px] border-b-[#00754a] ",
-                  activeTabClassName
+                  "absolute inset-0  border-b-[6px] md:border-b-[4px] border-b-[#00754a] "
                 )}
               />
             )}
@@ -101,19 +100,24 @@ export const FadeInDiv = ({
     return tab.value === tabs[0].value;
   };
   return (
-    <div className="relative w-full h-full">
+    <div className="relative w-full h-full bg-[#d4e9e2]">
       {tabs.map((tab, idx) => (
         <motion.div
           key={tab.value}
-          layoutId={tab.value}
+          /*
           style={{
-            zIndex: -idx,
+            // zIndex: -idx,
             opacity: idx < 1 ? 1 - idx * 0 : 0,
           }}
           animate={{
-            y: isActive(tab) ? [0, 40, 0] : 0,
+            y: isActive(tab) ? [0, 1, 0] : 0,
           }}
-          className={cn("w-full h-full absolute top-0 left-0", className)}
+            */
+          className={cn(
+            `w-full h-full absolute top-0 left-0 ${
+              isActive(tab) ? "abierto" : "cerrado"
+            } `
+          )}
         >
           {tab.content}
         </motion.div>
