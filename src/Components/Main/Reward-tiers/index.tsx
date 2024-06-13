@@ -18,7 +18,7 @@ export default function RewardTiers() {
       ),
       value: "25",
       content: (
-        <div className=" bg-[#d4e9e2] pb-12 md:flex md:items-center md:py-8 md:gap-12">
+        <div className=" bg-[#d4e9e2] pb-12 md:flex md:items-center md:py-8 md:gap-12 md:justify-center">
           <Datos id={"0"} />
         </div>
       ),
@@ -31,7 +31,7 @@ export default function RewardTiers() {
       ),
       value: "100",
       content: (
-        <div className=" bg-[#d4e9e2] pb-12 md:flex md:items-center md:py-8 md:gap-12">
+        <div className=" bg-[#d4e9e2] pb-12 md:flex md:items-center md:py-8 md:gap-12 md:justify-center">
           <Datos id={"1"} />
         </div>
       ),
@@ -45,7 +45,7 @@ export default function RewardTiers() {
       ),
       value: "200",
       content: (
-        <div className=" bg-[#d4e9e2] pb-12 md:flex md:items-center md:py-8 md:gap-12">
+        <div className=" bg-[#d4e9e2] pb-12 md:flex md:items-center md:py-8 md:gap-12 md:justify-center">
           <Datos id={"2"} />
         </div>
       ),
@@ -59,7 +59,7 @@ export default function RewardTiers() {
       ),
       value: "300",
       content: (
-        <div className=" bg-[#d4e9e2] pb-12 md:flex md:items-center md:py-8 md:gap-12">
+        <div className=" bg-[#d4e9e2] pb-12 md:flex md:items-center md:py-8 md:gap-12 md:justify-center">
           <Datos id={"3"} />
         </div>
       ),
@@ -74,7 +74,7 @@ export default function RewardTiers() {
       ),
       value: "400",
       content: (
-        <div className=" bg-[#d4e9e2] pb-12 md:flex md:items-center md:py-8 md:gap-12">
+        <div className=" bg-[#d4e9e2] pb-12 md:flex md:items-center md:py-8 md:gap-12 md:justify-center">
           <Datos id={"4"} />
         </div>
       ),

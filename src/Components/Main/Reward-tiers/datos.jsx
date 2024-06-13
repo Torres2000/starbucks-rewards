@@ -9,7 +9,7 @@ export default function Datos({ id }) {
 
   return (
     <>
-      <div className="py-8 md:p-0 md:max-w-[346px]">
+      <div className="py-8 md:p-0 md:max-w-[375px]">
         <Image
           src={img}
           priority
@@ -19,7 +19,7 @@ export default function Datos({ id }) {
           className="object-cover object-left-top  -bottom-10 inset-x-0  rounded-xl mx-auto md:w-full"
         />
       </div>
-      <div className="px-4 md:flex md:flex-col md:items-start">
+      <div className="px-4 md:flex md:flex-col md:items-start md:max-w-[375px]">
         <h3 className="text-center font-semibold text-lg pb-[18px] md:text-left md:text-2xl">
           {title}
         </h3>
