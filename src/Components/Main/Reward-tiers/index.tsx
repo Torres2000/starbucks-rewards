@@ -7,20 +7,18 @@ import start100 from "@/img/reward-tiers/100.webp";
 import start200 from "@/img/reward-tiers/200.webp";
 import start300 from "@/img/reward-tiers/300.webp";
 import start400 from "@/img/reward-tiers/400.webp";
-import start from "./start";
 import Datos from "./datos";
-import { useState } from "react";
 export default function RewardTiers() {
   const tabs = [
     {
       title: (
         <p className="md:text-2xl">
-          25 <span className="text-[#cba258] text-xs">★</span>
+          25 <span className="text-[#cba258] text-xs md:text-sm">★</span>
         </p>
       ),
       value: "25",
       content: (
-        <div className=" bg-[#d4e9e2] pb-12">
+        <div className=" bg-[#d4e9e2] pb-12 md:flex md:items-center md:py-8 md:gap-12">
           <Datos id={"0"} />
         </div>
       ),
@@ -28,12 +26,12 @@ export default function RewardTiers() {
     {
       title: (
         <p className="md:text-2xl">
-          100 <span className="text-[#cba258] text-xs">★</span>
+          100 <span className="text-[#cba258] text-xs md:text-sm">★</span>
         </p>
       ),
       value: "100",
       content: (
-        <div className=" bg-[#d4e9e2] pb-12">
+        <div className=" bg-[#d4e9e2] pb-12 md:flex md:items-center md:py-8 md:gap-12">
           <Datos id={"1"} />
         </div>
       ),
@@ -42,12 +40,12 @@ export default function RewardTiers() {
     {
       title: (
         <p className="md:text-2xl">
-          200 <span className="text-[#cba258] text-xs">★</span>
+          200 <span className="text-[#cba258] text-xs md:text-sm">★</span>
         </p>
       ),
       value: "200",
       content: (
-        <div className=" bg-[#d4e9e2] pb-12">
+        <div className=" bg-[#d4e9e2] pb-12 md:flex md:items-center md:py-8 md:gap-12">
           <Datos id={"2"} />
         </div>
       ),
@@ -56,12 +54,12 @@ export default function RewardTiers() {
     {
       title: (
         <p className="md:text-2xl">
-          300 <span className="text-[#cba258] text-xs">★</span>
+          300 <span className="text-[#cba258] text-xs md:text-sm">★</span>
         </p>
       ),
       value: "300",
       content: (
-        <div className=" bg-[#d4e9e2] pb-12">
+        <div className=" bg-[#d4e9e2] pb-12 md:flex md:items-center md:py-8 md:gap-12">
           <Datos id={"3"} />
         </div>
       ),
@@ -71,12 +69,12 @@ export default function RewardTiers() {
       title: (
         <p className="md:text-2xl">
           {" "}
-          400 <span className="text-[#cba258] text-xs">★</span>
+          400 <span className="text-[#cba258] text-xs md:text-sm">★</span>
         </p>
       ),
       value: "400",
       content: (
-        <div className=" bg-[#d4e9e2] pb-12 ">
+        <div className=" bg-[#d4e9e2] pb-12 md:flex md:items-center md:py-8 md:gap-12">
           <Datos id={"4"} />
         </div>
       ),
@@ -86,13 +84,13 @@ export default function RewardTiers() {
 
   return (
     <>
-      <section className="pt-12 bg-[#d4e8e152]">
+      <section className="pt-12 bg-[#d4e8e152] ">
         <div>
           <h2 className="text-2xl font-semibold text-center md:text-[28px]">
             Get your favorites for free
           </h2>
         </div>
-        <div className="h-[28rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start mt-[22px] mb-40 md:mt-14">
+        <div className="h-[28rem] md:h-[20rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start mt-[22px] mb-40 md:mt-14 md:mb-16">
           <Tabs tabs={tabs} />
         </div>
       </section>
