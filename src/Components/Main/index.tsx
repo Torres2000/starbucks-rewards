@@ -2,6 +2,7 @@ import Inicio from "./Inicio";
 import Header from "./Header";
 import Getting_Started from "./Getting-started";
 import Reward_tiers from "./Reward-tiers";
+import EndlessExtras from "./Endless-Extras";
 export default function Main() {
   return (
     <>
@@ -9,9 +10,10 @@ export default function Main() {
         <Header />
         {/*
         <Inicio />
+        <Getting_Started />
         */}
         <Reward_tiers />
-        <Getting_Started />
+        <EndlessExtras />
       </main>
     </>
   );
