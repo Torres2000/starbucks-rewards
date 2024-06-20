@@ -11,8 +11,8 @@ export default function Main() {
         {/*
         <Inicio />
         <Getting_Started />
-        */}
         <Reward_tiers />
+        */}
         <EndlessExtras />
       </main>
     </>
