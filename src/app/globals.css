@@ -35,3 +35,8 @@
     background-image: url("../img/hero/xl-hero-desktop-2021.webp");
   }
 }
+
+.classGrid{
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
