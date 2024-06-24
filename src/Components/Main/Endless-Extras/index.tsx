@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
 import datos from "./datos";
+import Modal from "./modal";
+import Carousel from "./carousel";
 export default function endlessExtras() {
   const datosInfo = datos;
-  console.log(datosInfo);
-  datosInfo.map((item) => console.log(item.img));
 
   return (
     <>
@@ -46,6 +46,7 @@ export default function endlessExtras() {
                     Learn more
                   </button>
                 </div>
+                <Modal valor={item.modal} />
               </div>
             ))}
           </div>

@@ -1,50 +1,55 @@
 "use client";
 import { Carousel } from "keep-react";
-
+import Image from "next/image";
 import datos from "./datosCarousel";
 import { useEffect, useState } from "react";
 
-function CarouselComponent(valor) {
+function CarouselComponent({ valor }) {
+  const [value, setValue] = useState("defaul");
+  const [datosCarousel, setDatosCarousel] = useState();
 
-  const [value, setValue] = useState("faster");
-const vl = valor.valor;
-console.log(vl);
-  useEffect(()=>{
-    setValue(valor.valor)
-  },[valor])
-
-  const datosp = datos;
-
-  const datosCarousel = datosp[value];
+  useEffect(() => {
+    const val = valor.valor;
+    //console.log(val);
+    setValue(val);
+    //console.log(value);
+    switch (valor.valor) {
+      case "freebies":
+        setDatosCarousel(datos.freebies);
+        break;
+      case "order":
+        setDatosCarousel(datos.order);
+        break;
+      case "faster":
+        setDatosCarousel(datos.faster);
+        break;
+      default:
+        break;
+    }
+  }, [value]);
   console.log(datosCarousel);
-  
 
+  // ya se traen los valores correctamente y se almacenan en caousel
 
   return (
     <>
       <section className="w-72">
         <Carousel>
           <Carousel.Slides>
-            <Carousel.Item>
-              <div className="flex items-center justify-center rounded-xl border border-metal-100 bg-primary-25 p-20">
-                <h2 className="text-heading-1 font-medium text-metal-900">1</h2>
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="flex items-center justify-center rounded-xl border border-metal-100 bg-primary-25 p-20">
-                <h2 className="text-heading-1 font-medium text-metal-900">2</h2>
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="flex items-center justify-center rounded-xl border border-metal-100 bg-primary-25 p-20">
-                <h2 className="text-heading-1 font-medium text-metal-900">3</h2>
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="flex items-center justify-center rounded-xl border border-metal-100 bg-primary-25 p-20">
-                <h2 className="text-heading-1 font-medium text-metal-900">4</h2>
-              </div>
-            </Carousel.Item>
+            {datosCarousel &&
+              datosCarousel.map((item, index) => (
+                <Carousel.Item key={index}>
+                  <div className="">
+                    <div>
+                      <Image src={item.img} alt={item.title} />
+                    </div>
+                    <div>
+                      <h2 className="">{item.title}</h2>
+                      <p>{item.descripcion}</p>
+                    </div>
+                  </div>
+                </Carousel.Item>
+              ))}
           </Carousel.Slides>
           <Carousel.Control>
             <Carousel.Buttons>
