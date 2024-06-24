@@ -31,22 +31,20 @@ export default function endlessExtras() {
                 <div className=" mr-4 md:m-0 md:pb-7">
                   <Image
                     src={item.img}
-                    alt={item.titulo}
+                    alt={item.title}
                     className=""
                     width={112}
                     height={112}
                   />
                 </div>
                 <div className="md:flex flex-col items-center">
-                  <h3 className="font-semibold md:text-lg">{item.titulo}</h3>
+                  <h3 className="font-semibold md:text-lg">{item.title}</h3>
                   <p className="pt-5 text-sm md:text-center md:text-base">
                     {item.parrafo}
                   </p>
-                  <button className="my-3 text-sm border-b-[1px] text-[#006241] border-[#006241]">
-                    Learn more
-                  </button>
+
+                  <Modal valor={item.modal} />
                 </div>
-                <Modal valor={item.modal} />
               </div>
             ))}
           </div>

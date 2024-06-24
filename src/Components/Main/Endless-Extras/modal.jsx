@@ -16,7 +16,12 @@ function ModalComponent(valor) {
 
   return (
     <>
-      <Button onClick={() => openModal(valor)}>Open Modal</Button>
+      <Button
+        onClick={() => openModal(valor)}
+        className="my-3 text-sm border-b-[1px] text-[#006241] border-[#006241] bg-white p-0 rounded-none"
+      >
+        Learn more
+      </Button>
       <Modal isOpen={isOpen} onClose={closeModal}>
         <Modal.Body className="flex w-[30rem] flex-col items-center p-6 lg:p-8">
           <Modal.Icon className="flex justify-end w-full bg-white">
