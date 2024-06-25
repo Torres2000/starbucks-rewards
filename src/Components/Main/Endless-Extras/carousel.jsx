@@ -33,7 +33,7 @@ function CarouselComponent({ valor }) {
 
   return (
     <>
-      <section className="w-72">
+      <section className="w-full">
         <Carousel>
           <Carousel.Slides>
             {datosCarousel &&
@@ -44,7 +44,9 @@ function CarouselComponent({ valor }) {
                       <Image src={item.img} alt={item.title} />
                     </div>
                     <div>
-                      <h2 className="">{item.title}</h2>
+                      <h2 className="text-xl font-semibold my-2">
+                        {item.title}
+                      </h2>
                       <p>{item.descripcion}</p>
                     </div>
                   </div>

@@ -27,7 +27,7 @@ function ModalComponent(valor) {
           <Modal.Icon className="flex justify-end w-full bg-white">
             <X size={32} onClick={closeModal} className="cursor-pointer" />
           </Modal.Icon>
-          <Modal.Content className="my-4 text-center">
+          <Modal.Content className=" text-center">
             <Carousel valor={valor} />
           </Modal.Content>
         </Modal.Body>
