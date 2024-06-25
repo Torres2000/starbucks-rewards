@@ -36,7 +36,14 @@
   }
 }
 
-.classGrid{
+.classGrid {
   display: grid;
   grid-template-columns: auto 1fr;
+}
+
+@media (min-width: 1024px) {
+  .clasGrid2 {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
 }
