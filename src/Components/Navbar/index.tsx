@@ -12,7 +12,6 @@ export default function Navbar() {
   function changeMenu() {
     setAbierto(!abierto);
   }
-  console.log(abierto);
 
   return (
     <>

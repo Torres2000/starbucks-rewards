@@ -1,9 +1,49 @@
+@import "keep-react/css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
 
-.heroMobile {
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.fondoInicio {
+  background-color: #d4e9e2;
   background-image: url("../img/hero/hero-mobile-2021.webp");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
+}
+
+.abierto {
+  transition: all 2s ease;
+  opacity: 1;
+  z-index: 1;
+}
+.cerrado {
+  opacity: 0;
+  z-index: -1;
+}
+@media (min-width: 768px) {
+  .fondoInicio {
+    background-image: url("../img/hero/xl-hero-desktop-2021.webp");
+  }
+}
+
+.classGrid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+@media (min-width: 1024px) {
+  .clasGrid2 {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
 }
