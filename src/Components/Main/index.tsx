@@ -5,6 +5,7 @@ import Reward_tiers from "./Reward-tiers";
 import EndlessExtras from "./Endless-Extras";
 import CashSTart from "./Cash-Stars/page";
 import KeepRewarsd from "./Keep-Rewards/page";
+import Questions from "./Questions/page";
 export default function Main() {
   return (
     <>
@@ -19,8 +20,9 @@ export default function Main() {
         <EndlessExtras />
 
         <CashSTart />
-        */}
         <KeepRewarsd />
+        */}
+        <Questions />
       </main>
     </>
   );
