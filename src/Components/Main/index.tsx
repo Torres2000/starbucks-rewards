@@ -6,6 +6,7 @@ import EndlessExtras from "./Endless-Extras";
 import CashSTart from "./Cash-Stars/page";
 import KeepRewarsd from "./Keep-Rewards/page";
 import Questions from "./Questions/page";
+import TermsConditions from "./Terms-Conditions/page";
 export default function Main() {
   return (
     <>
@@ -21,8 +22,9 @@ export default function Main() {
 
         <CashSTart />
         <KeepRewarsd />
-        */}
         <Questions />
+        */}
+        <TermsConditions />
       </main>
     </>
   );
