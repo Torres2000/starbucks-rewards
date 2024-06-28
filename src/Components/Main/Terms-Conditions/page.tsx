@@ -9,7 +9,7 @@ export default function TermsConditions() {
             <div>
               <h2 className="text-2xl font-semibold">Terms and Conditions</h2>
               <div>
-                <div>
+                <div className="pb-4">
                   <p className="text-sm pb-3 2xl:text-base">
                     At participating stores. Restrictions apply.
                   </p>
@@ -75,21 +75,21 @@ export default function TermsConditions() {
                 </div>
                 <div className="grid grid-cols-2 gap-x-6">
                   <div className="pb-5">
-                    <h3 className="font uppercase text-[#00000094] font-bold text-sm pb-4">
+                    <h3 className="font uppercase text-[#00000094] font-bold pb-4">
                       Earning Stars
                     </h3>
-                    <p className="text-sm pb-3">
+                    <p className="text-sm pb-3 2xl:text-base">
                       Stars cannot be earned on purchases of alcohol, Starbucks
                       Cards or Starbucks Card reloads.
                     </p>
-                    <p className="text-sm pb-3">
+                    <p className="text-sm pb-3 2xl:text-base">
                       Earn 1 Star per $1 spent when you scan your member barcode
                       in the app, then pay with cash, credit/debit cards or
                       mobile wallets at participating stores. You can also earn
                       1 Star per $1 spent when you link a payment method and pay
                       directly through the app.
                     </p>
-                    <p className="text-sm pb-3">
+                    <p className="text-sm pb-3 2xl:text-base">
                       Earn 2 Stars per $1 spent when you load funds and pay with
                       your digital Starbucks Card in the app. You can also earn
                       2 Stars per $1 spent when you pay in-person at a
@@ -103,7 +103,7 @@ export default function TermsConditions() {
                     <h3 className="pb-3 uppercase text-[#00000094] font-bold">
                       Terms of Use
                     </h3>
-                    <p className="text-sm pb-3">
+                    <p className="text-sm pb-3 2xl:text-base">
                       For full program details visit{" "}
                       <a href="#" className="inline-flex items-center">
                         <span className="border-b-[#006241] text-[#006241] border-[1px] leading-none">
@@ -112,7 +112,7 @@ export default function TermsConditions() {
                         <ArrowSquareOut />.
                       </a>
                     </p>
-                    <p className="text-sm pb-3">
+                    <p className="text-sm pb-3 2xl:text-base">
                       Starbucks® Rewards benefits are available at participating
                       Starbucks stores. Not all stores have the ability to honor
                       Rewards at this time. Visit the{" "}
@@ -129,7 +129,7 @@ export default function TermsConditions() {
                     <h3 className="pb-3 uppercase text-[#00000094] font-bold">
                       Benefits
                     </h3>
-                    <p className="text-sm pb-3">
+                    <p className="text-sm pb-3 2xl:text-base">
                       Free refills available during same in-store visit only. To
                       qualify for the Birthday Reward, you must have made at
                       least one Star-earning transaction.
@@ -139,7 +139,7 @@ export default function TermsConditions() {
                     <h3 className="pb-3 uppercase text-[#00000094] font-bold">
                       Redeeming Rewards
                     </h3>
-                    <p className="text-sm pb-3">
+                    <p className="text-sm pb-3 2xl:text-base">
                       Rewards cannot be redeemed for alcoholic beverages or
                       multi-serve items. You pay the difference for any beverage
                       customization over $1 and/or merchandise item over $20.

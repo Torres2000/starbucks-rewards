@@ -14,7 +14,10 @@ export default function Questions() {
                 We want to help in any way we can. You can ask your barista
                 anytime or we’ve answered the most commonly asked{" "}
                 <a href="#" className="inline-flex items-center">
-                  <span>right over here </span> <ArrowSquareOut size={14} />
+                  <span className="text-[#00000094] border-[1px] border-b-[#00000094] leading-none">
+                    right over here{" "}
+                  </span>{" "}
+                  <ArrowSquareOut size={14} />
                 </a>
               </p>
             </div>

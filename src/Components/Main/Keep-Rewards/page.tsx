@@ -31,7 +31,7 @@ export default function KeepRewarsd() {
                       href="#"
                       className="text-sm inline-flex items-center text-[#006241] md:text-base"
                     >
-                      <span className="border-[1px] border-b-[#006241] md:text-center">
+                      <span className="border-[1px] leading-none border-b-[#006241] md:text-center">
                         Link your Delta SkyMiles®
                       </span>{" "}
                       <ArrowSquareOut size={14} className=" md:w-6 md:h-6" />
@@ -53,7 +53,7 @@ export default function KeepRewarsd() {
                       href="#"
                       className="text-sm inline-flex items-center text-[#006241] md:text-base"
                     >
-                      <span className="border-[1px] border-b-[#006241] md:text-center">
+                      <span className="border-[1px] leading-none border-b-[#006241] md:text-center">
                         Link your Bank of America
                       </span>{" "}
                       <ArrowSquareOut size={14} className=" md:w-6 md:h-6" />
@@ -75,7 +75,7 @@ export default function KeepRewarsd() {
                       href="#"
                       className="text-sm inline-flex items-center text-[#006241] md:text-base"
                     >
-                      <span className="border-[1px] border-b-[#006241] md:text-center">
+                      <span className="border-[1px] leading-none border-b-[#006241] md:text-center">
                         Link your Marriott Bonvoy®
                       </span>{" "}
                       <ArrowSquareOut size={14} className=" md:w-6 md:h-6" />
