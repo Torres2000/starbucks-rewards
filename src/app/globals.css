@@ -34,6 +34,9 @@
   .fondoInicio {
     background-image: url("../img/hero/xl-hero-desktop-2021.webp");
   }
+  .fondoKeep {
+    background-image: url("../img/Keep-Rewards/fondo.webp");
+  }
 }
 
 .classGrid {
