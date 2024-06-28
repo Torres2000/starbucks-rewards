@@ -10,8 +10,8 @@ export default function KeepRewarsd() {
     <>
       <section>
         <div className="px-4 fondoKeep md:p-8">
-          <div className="md:bg-white">
-            <div className="flex flex-col items-center pt-5 pb-8">
+          <div className="md:bg-white lg:px-7 lg:pb-8">
+            <div className="flex flex-col items-center pt-5 pb-8 lg:pt-14 ">
               <h2 className="font-semibold text-xl sm:text-2xl md:text-3xl">
                 Keep the Rewards Coming
               </h2>
@@ -23,10 +23,10 @@ export default function KeepRewarsd() {
             </div>
             <ul>
               <li className="flex items-center my-5 md:flex-col">
-                <div className="sm:max-w-28 md:max-w-none">
+                <div className="sm:max-w-28 md:max-w-none lg:max-w-52">
                   <Image src={delta} alt="Delta-img" />
                 </div>
-                <p className="pl-4 text-sm md:p-0 md:text-base md:text-center">
+                <p className="pl-4 text-sm md:p-0 md:text-base md:text-center lg:pt-6">
                   <a
                     href="#"
                     className="text-sm inline-flex items-center text-[#006241] md:text-base"
