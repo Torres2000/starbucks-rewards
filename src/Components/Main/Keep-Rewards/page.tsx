@@ -8,8 +8,8 @@ export default function KeepRewarsd() {
   return (
     <>
       <section>
-        <div className="px-4 fondoKeep md:p-8">
-          <div className="md:bg-white">
+        <div className="px-4 fondoKeep bg-[#d4e9e2] md:p-8">
+          <div className=" md:bg-white pb-10">
             <div className="max-w-[1440px] mx-auto md:px-4 lg:px-7 lg:pb-8">
               <div className="flex flex-col items-center pt-5 pb-8 lg:pt-14 ">
                 <h2 className="font-semibold text-xl sm:text-2xl md:text-3xl">
@@ -21,7 +21,7 @@ export default function KeepRewarsd() {
                   more Stars.
                 </p>
               </div>
-              <ul className="flex flex-col md:flex-row gap-8">
+              <ul className="flex flex-col md:flex-row gap-8 md:py-8">
                 <li className="flex items-center my-5 md:flex-col">
                   <div className="sm:max-w-28 md:max-w-none lg:max-w-52">
                     <Image src={delta} alt="Delta-img" />
@@ -89,6 +89,14 @@ export default function KeepRewarsd() {
                   </p>
                 </li>
               </ul>
+              <div className="flex justify-center">
+                <a
+                  href="#"
+                  className="  text-white font-semibold text-sm bg-[#00754A] px-4 py-2 rounded-full hover:bg-[#00754ae6]"
+                >
+                  Join Starbucks® Rewards
+                </a>
+              </div>
             </div>
           </div>
         </div>
