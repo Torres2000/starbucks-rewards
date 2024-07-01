@@ -7,12 +7,14 @@ import CashSTart from "./Cash-Stars/page";
 import KeepRewarsd from "./Keep-Rewards/page";
 import Questions from "./Questions/page";
 import TermsConditions from "./Terms-Conditions/page";
+import Footer from "./Footer/page";
 export default function Main() {
   return (
     <>
       <main>
         <Header />
-
+        {/**
+  
         <Inicio />
         <Getting_Started />
         <Reward_tiers />
@@ -21,6 +23,8 @@ export default function Main() {
         <Questions />
         <KeepRewarsd />
         <TermsConditions />
+        */}
+        <Footer />
       </main>
     </>
   );
