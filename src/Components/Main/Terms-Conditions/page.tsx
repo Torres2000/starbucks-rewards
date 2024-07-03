@@ -73,7 +73,7 @@ export default function TermsConditions() {
                     from Marriott International, Inc.<a href="#">↩</a>
                   </p>
                 </div>
-                <div className="grid grid-cols-2 gap-x-6">
+                <div className="grid md:grid-cols-2 gap-x-6">
                   <div className="pb-5">
                     <h3 className="font uppercase text-[#00000094] font-bold pb-4">
                       Earning Stars

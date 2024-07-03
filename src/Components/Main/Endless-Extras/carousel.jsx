@@ -26,7 +26,7 @@ function CarouselComponent({ valor }) {
       default:
         break;
     }
-  }, [value]);
+  }, [value, valor.valor]);
   console.log(datosCarousel);
 
   // ya se traen los valores correctamente y se almacenan en caousel
