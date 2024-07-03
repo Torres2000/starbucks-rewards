@@ -2,15 +2,15 @@ import Links from "./links";
 export default function Footer() {
   return (
     <>
-      <section>
-        <nav>
+      <footer className="pt-12">
+        <nav className="px-10">
           <Links />
 
           <hr />
           <ul></ul>
           <ul></ul>
         </nav>
-      </section>
+      </footer>
     </>
   );
 }
