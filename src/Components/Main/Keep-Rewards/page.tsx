@@ -16,7 +16,7 @@ export default function KeepRewarsd() {
                   Keep the Rewards Coming
                 </h2>
                 <p className="text-center text-sm pt-3 md:text-base">
-                  The Rewards don't stop at your morning coffee. Join Starbucks®
+                  The Rewards dont stop at your morning coffee. Join Starbucks®
                   Rewards and unlock perks from our partners, all while earning
                   more Stars.
                 </p>
