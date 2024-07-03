@@ -1,14 +1,13 @@
 import type { Config } from "tailwindcss";
-import keepPreset from "keep-react/preset";
 
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "node_modules/keep-react/**/*.{js,jsx,ts,tsx}"
+    "node_modules/keep-react/**/*.{js,jsx,ts,tsx}",
   ],
-  presets: [keepPreset],
+  presets: [require("keep-react/preset")],
   theme: {
     extend: {
       backgroundImage: {
