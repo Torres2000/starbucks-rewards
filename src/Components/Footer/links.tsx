@@ -4,7 +4,7 @@ export default function Links() {
       <div className="hidden  lg:grid grid-cols-5 ">
         {/* Div acordeon invisible  a mas de 1024px */}
         <div>
-          <h2 className="text-lg mb-[26px]">About Us</h2>
+          <h2 className="text-lg mb-[26px]"> About Us</h2>
           <ul className="inline-block">
             <li>
               <a
@@ -243,13 +243,7 @@ export default function Links() {
                 Order and Pick Up Options
               </a>
             </li>
-            <li>
-              <a
-                href="#"
-                className="py-2 mb-3 block text-base text-[#00000094] hover:text-[#000000de]"
-                target="_blank"
-              ></a>
-            </li>
+
             <li>
               <a
                 href="#"
