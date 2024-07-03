@@ -12,15 +12,18 @@ export default function Main() {
   return (
     <>
       <main>
+        <EndlessExtras />
+        {/*
+        
         <Header />
         <Inicio />
         <Getting_Started />
         <Reward_tiers />
-        <EndlessExtras />
         <CashSTart />
         <Questions />
         <KeepRewarsd />
         <TermsConditions />
+        */}
       </main>
     </>
   );
