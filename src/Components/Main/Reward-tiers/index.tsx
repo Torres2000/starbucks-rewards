@@ -90,7 +90,7 @@ export default function RewardTiers() {
             Get your favorites for free
           </h2>
         </div>
-        <div className="h-[28rem] md:h-[20rem] [perspective:1000px] relative b flex flex-col  mx-auto w-full  items-start justify-start mt-[22px] mb-40 md:mt-14 md:mb-16">
+        <div className=" md:h-[20rem] [perspective:1000px] relative  flex flex-col  mx-auto w-full  items-start justify-start mt-[22px]  md:mt-14 md:mb-16">
           <Tabs tabs={tabs} />
         </div>
       </section>

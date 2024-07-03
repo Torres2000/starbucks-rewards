@@ -7,23 +7,19 @@ import CashSTart from "./Cash-Stars/page";
 import KeepRewarsd from "./Keep-Rewards/page";
 import Questions from "./Questions/page";
 import TermsConditions from "./Terms-Conditions/page";
-import Footer from "../Footer/page";
 export default function Main() {
   return (
     <>
       <main>
-        <EndlessExtras />
-        {/*
-        
         <Header />
         <Inicio />
         <Getting_Started />
         <Reward_tiers />
+        <EndlessExtras />
         <CashSTart />
         <Questions />
         <KeepRewarsd />
         <TermsConditions />
-        */}
       </main>
     </>
   );
