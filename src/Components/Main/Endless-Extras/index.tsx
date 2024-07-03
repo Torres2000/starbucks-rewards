@@ -2,7 +2,6 @@
 import Image from "next/image";
 import datos from "./datos";
 import Modal from "./modal";
-import Carousel from "./carousel";
 export default function endlessExtras() {
   const datosInfo = datos;
 
@@ -32,7 +31,6 @@ export default function endlessExtras() {
                   <Image
                     src={item.img}
                     alt={item.title}
-                    className=""
                     width={112}
                     height={112}
                   />

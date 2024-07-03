@@ -12,7 +12,6 @@ export default function Main() {
     <>
       <main>
         <Header />
-
         <Inicio />
         <Getting_Started />
         <Reward_tiers />
