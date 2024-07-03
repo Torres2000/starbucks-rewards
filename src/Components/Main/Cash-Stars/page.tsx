@@ -9,7 +9,7 @@ export default function CashSTart() {
   return (
     <>
       <section>
-        <div className="max-w-[1440px] m-auto py-10 px-4 md:py-16 md:px-6 lg:px-10 md:flex md:flex-col md:items-center">
+        <div className="max-w-[1440px] m-auto py-10 px-4 md:py-16  lg:px-10 md:flex md:flex-col md:items-center">
           <div className="pt-10 pb-12 md:pt-6 md:w-2/3 md:pb-20">
             <h2 className="font-semibold text-xl sm:text-2xl  md:text-[28px] pt-6 pb-5 text-center  ">
               Cash or card, you earn Stars
