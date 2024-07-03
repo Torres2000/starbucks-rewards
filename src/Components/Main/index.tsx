@@ -17,8 +17,8 @@ export default function Main() {
         <Reward_tiers />
         <EndlessExtras />
         <CashSTart />
-        <Questions />
         <KeepRewarsd />
+        <Questions />
         <TermsConditions />
       </main>
     </>
