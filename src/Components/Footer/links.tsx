@@ -1,7 +1,7 @@
 export default function Links() {
   return (
     <>
-      <div className="hidden  lg:grid grid-cols-5 ">
+      <div className="hidden  lg:grid grid-cols-5 gap-3 ">
         {/* Div acordeon invisible  a mas de 1024px */}
         <div>
           <h2 className="text-lg mb-[26px]"> About Us</h2>

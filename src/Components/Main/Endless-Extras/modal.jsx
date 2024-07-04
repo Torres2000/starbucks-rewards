@@ -23,7 +23,7 @@ function ModalComponent(valor) {
         Learn more
       </Button>
       <Modal isOpen={isOpen} onClose={closeModal}>
-        <Modal.Body className="flex w-[30rem] flex-col items-center p-6 lg:p-8 !bg-white">
+        <Modal.Body className="flex w-[30rem] flex-col items-center  p-6 lg:p-8 !bg-white">
           <Modal.Icon className="flex justify-end w-full !bg-white">
             <X size={32} onClick={closeModal} className="cursor-pointer" />
           </Modal.Icon>
