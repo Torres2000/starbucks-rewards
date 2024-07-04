@@ -1,25 +1,18 @@
 "use client";
-import {
-  Accordion,
-  AccordionContainer,
-  AccordionContent,
-  AccordionIcon,
-  AccordionPanel,
-  AccordionTitle,
-} from "keep-react";
+import { Accordion } from "keep-react";
 
 export const AccordionComponent = () => {
   return (
     <section className="lg:hidden">
       <Accordion className="space-y-4">
-        <AccordionPanel className="border-none text-black">
-          <AccordionContainer className="bg-white text-blackborder-none">
-            <AccordionTitle className="!text-black">
+        <Accordion.Panel className="border-none text-black">
+          <Accordion.Container className="bg-white text-blackborder-none">
+            <Accordion.Title className="!text-black">
               <span className="invisible">1</span>About Us
-            </AccordionTitle>
-            <AccordionIcon />
-          </AccordionContainer>
-          <AccordionContent className="bg-white">
+            </Accordion.Title>
+            <Accordion.Icon />
+          </Accordion.Container>
+          <Accordion.Content className="bg-white">
             <ul className="inline-block pl-5">
               <li>
                 <a
@@ -85,17 +78,17 @@ export const AccordionComponent = () => {
                 </a>
               </li>
             </ul>
-          </AccordionContent>
-        </AccordionPanel>
+          </Accordion.Content>
+        </Accordion.Panel>
 
-        <AccordionPanel className="border-none text-black">
-          <AccordionContainer className="bg-white text-blackborder-none">
-            <AccordionTitle className="!text-black">
+        <Accordion.Panel className="border-none text-black">
+          <Accordion.Container className="bg-white text-blackborder-none">
+            <Accordion.Title className="!text-black">
               <span className="invisible">2</span>Careers
-            </AccordionTitle>
-            <AccordionIcon />
-          </AccordionContainer>
-          <AccordionContent className="bg-white">
+            </Accordion.Title>
+            <Accordion.Icon />
+          </Accordion.Container>
+          <Accordion.Content className="bg-white">
             <ul className="inline-block pl-5">
               <li>
                 <a
@@ -152,17 +145,17 @@ export const AccordionComponent = () => {
                 </a>
               </li>
             </ul>
-          </AccordionContent>
-        </AccordionPanel>
+          </Accordion.Content>
+        </Accordion.Panel>
 
-        <AccordionPanel className="border-none text-black">
-          <AccordionContainer className="bg-white text-blackborder-none">
-            <AccordionTitle className="!text-black">
+        <Accordion.Panel className="border-none text-black">
+          <Accordion.Container className="bg-white text-blackborder-none">
+            <Accordion.Title className="!text-black">
               <span className="invisible">2</span>Social Impact
-            </AccordionTitle>
-            <AccordionIcon />
-          </AccordionContainer>
-          <AccordionContent className="bg-white">
+            </Accordion.Title>
+            <Accordion.Icon />
+          </Accordion.Container>
+          <Accordion.Content className="bg-white">
             <ul className="inline-block pl-5">
               <li>
                 <a
@@ -192,17 +185,17 @@ export const AccordionComponent = () => {
                 </a>
               </li>
             </ul>
-          </AccordionContent>
-        </AccordionPanel>
+          </Accordion.Content>
+        </Accordion.Panel>
 
-        <AccordionPanel className="border-none text-black">
-          <AccordionContainer className="bg-white text-blackborder-none">
-            <AccordionTitle className="!text-black">
+        <Accordion.Panel className="border-none text-black">
+          <Accordion.Container className="bg-white text-blackborder-none">
+            <Accordion.Title className="!text-black">
               <span className="invisible">2</span>For Business Partners
-            </AccordionTitle>
-            <AccordionIcon />
-          </AccordionContainer>
-          <AccordionContent className="bg-white">
+            </Accordion.Title>
+            <Accordion.Icon />
+          </Accordion.Container>
+          <Accordion.Content className="bg-white">
             <ul className="inline-block pl-5">
               <li>
                 <a
@@ -241,17 +234,17 @@ export const AccordionComponent = () => {
                 </a>
               </li>
             </ul>
-          </AccordionContent>
-        </AccordionPanel>
+          </Accordion.Content>
+        </Accordion.Panel>
 
-        <AccordionPanel className="border-none text-black">
-          <AccordionContainer className="bg-white text-blackborder-none">
-            <AccordionTitle className="!text-black">
+        <Accordion.Panel className="border-none text-black">
+          <Accordion.Container className="bg-white text-blackborder-none">
+            <Accordion.Title className="!text-black">
               <span className="invisible">2</span>Order And Pick Up
-            </AccordionTitle>
-            <AccordionIcon />
-          </AccordionContainer>
-          <AccordionContent className="bg-white">
+            </Accordion.Title>
+            <Accordion.Icon />
+          </Accordion.Container>
+          <Accordion.Content className="bg-white">
             <ul className="inline-block pl-5">
               <li>
                 <a
@@ -307,8 +300,8 @@ export const AccordionComponent = () => {
                 </a>
               </li>
             </ul>
-          </AccordionContent>
-        </AccordionPanel>
+          </Accordion.Content>
+        </Accordion.Panel>
       </Accordion>
     </section>
   );
