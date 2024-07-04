@@ -10,9 +10,7 @@ function CarouselComponent({ valor }) {
 
   useEffect(() => {
     const val = valor.valor;
-    //console.log(val);
     setValue(val);
-    //console.log(value);
     switch (valor.valor) {
       case "freebies":
         setDatosCarousel(datos.freebies);
@@ -27,7 +25,6 @@ function CarouselComponent({ valor }) {
         break;
     }
   }, [value, valor.valor]);
-  console.log(datosCarousel);
 
   // ya se traen los valores correctamente y se almacenan en caousel
 

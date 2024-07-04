@@ -80,7 +80,6 @@ export default function RewardTiers() {
       ),
     },
   ];
-  //console.log(tabs);
 
   return (
     <>
