@@ -18,7 +18,7 @@ function ModalComponent(valor) {
     <>
       <Button
         onClick={() => openModal(valor)}
-        className="my-3 text-sm border-b-[1px] text-[#006241] border-[#006241] bg-white p-0 rounded-none"
+        className="my-3 text-sm border-b-[1px] text-[#006241]  bg-white p-0 rounded-none underline hover:no-underline hover:bg-white"
       >
         Learn more
       </Button>
