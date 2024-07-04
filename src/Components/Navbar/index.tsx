@@ -11,6 +11,11 @@ export default function Navbar() {
   const [abierto, setAbierto] = useState(false);
   function changeMenu() {
     setAbierto(!abierto);
+    if (abierto) {
+      document.body.style.overflow = "";
+    } else {
+      document.body.style.overflow = "hidden";
+    }
   }
 
   return (
